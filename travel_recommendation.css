@@ -1,0 +1,389 @@
+/* Basic CSS for the navigation bar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #00B5F5;
+    ;
+    /* Example: Green background */
+    color: white;
+    /* Example: White text */
+    font-weight: bold;
+    /* Example: Bold text */
+    padding: 5px 10px;
+    /* Example: Padding for better appearance */
+    border-radius: 5px;
+    /* Example: Rounded corners */
+    text-decoration: underline;
+    /* Example: Underline for accessibility */
+}
+
+.pill-shaped {
+    border: 2x solid teal;
+    border-radius: 30px;
+    
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    width: 35%;
+   height: 30px;
+    text-align: center;
+    
+}
+
+.pill-shaped input[type="text"]{
+    border: none;
+    
+    
+}
+.pill-shaped input::placeholder {
+    
+    font-size: 12px;
+    background-color: transparent;
+    color: teal;
+}
+
+.pill-shaped  button {
+    background-color: teal;
+    color: white;
+    font-size: 10px;
+    border: none;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(./images/danish-prakash-xcG9BmgVcEs-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.main-container {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    width: 50%;
+
+
+}
+
+.main-text h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    border: 1px solid red;
+
+}
+
+.main-text p {
+    font-size: 14px;
+    font-weight: 100;
+    width: 75%;
+    color: off-white;
+    margin: 20px 0;
+
+}
+
+.main-text button {
+    background-color: hsla(0, 100%, 50%, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.main-text button:hover {
+    background-color: hsla(0, 100%, 50%, 0.8);
+    transform: scale(1.1);
+}
+
+/* Destination Search Result */
+
+#searchResult {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 35%;
+    /*margin-right: 50px;*/
+    
+    color: white;
+    border-radius: 10px;;
+
+}
+
+#searchResult .card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#searchResult .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#searchResult .card .card-text {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+#searchResult .card .card-text h4 {
+    margin: 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    
+
+}
+
+#searchResult .card .card-text p {
+    margin: 5px 5px;
+    font-size: 12px;
+    color: darkslategray;
+    
+}
+
+#searchResult .card .card-text a {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: teal;
+    color: white;
+    text-align: center;;
+    border-radius: 5px;
+    
+}
+
+
+/* Footer Styles */
+footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-right a {
+    color: #00B5F5;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: white;
+    transform: scale(1.5);
+
+}
+
+/* About Us Page CSS */
+.about-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid violet;
+}
+
+.about-container h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-flex h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-flex .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+
+    max-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardtext-container h4,
+.cardtext-container p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* Result section CSS */
+
+
+
+
+
+
+/* Contact Us Page CSS */
+
+.contact-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.contact-container h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contactForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    width: 75%;
+    border-radius: 5px;
+    border: 2px solid violet;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm label {
+    display: block;
+    color: #d3d3d3;
+    font-size: 12px;
+    ;
+    font-style: italic;
+}
+
+#contactForm input[type=text],
+#contactForm input[type=email],
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Arial", sans-serif;
+    /* Change to your desired font */
+    font-size: 14px;
+    /* Adjust font size as needed */
+    color: #999;
+    /* Change color as needed */
+    /* Other font properties like font-weight, font-style can also be applied */
+}
+
+
+#contactForm button {
+    width: 100%;
+    background-color: #0043E0;
+    ;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: purple;
+}

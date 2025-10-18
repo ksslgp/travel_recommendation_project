@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <title>About Us</title>
+
+</head>
+
+<body>
+    <nav>
+        <h3> &#x1F9F3;ABC Travel</h3>
+        <ul>
+            <li><a href="travel_recommendation.html">Home </a></li>
+            <li><a href="travel_about.html">About Us </a></li>
+            <li><a href="travel_contact.html" class="active">Contact Us </a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contact-container">
+            
+                    <h1>Contact Us</h1>
+                    
+                    <form action="#" method="POST" id="contactForm">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div >
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" onclick="thankyou()" >Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function thankyou() {
+            alert('Thank you for contacting us!')
+        }
+    </script>
+    <footer>
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+</body>
+
+</html>
